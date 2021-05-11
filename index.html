@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<html>
+
+<body id="body">
+ 
+<!-- Navigation -->   
+    
+<nav id="navbar">
+
+    <!--<header class="title">HTML</header>-->  
+    
+    <header class="title"><center><img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="This page is about HTML"></center></header>
+    
+    <hr>
+    
+    <ul class="nobull">
+    
+        <a class="nav-link" href="#overview" rel="internal"><li>Overview</li></a>    
+    
+    </ul>
+    
+    <hr>
+    
+    <ul class="nobull">
+    
+        <a class="nav-link" href="#elements" rel="internal"><li>Elements</li></a>    
+    
+    </ul>
+    
+    <hr>
+    
+    <ul class="nobull">
+    
+        <a class="nav-link" href="#tags" rel="internal"><li>Tags</li></a>    
+    
+    </ul>
+    
+    <hr>
+    
+        <ul class="nobull">
+    
+        <a class="nav-link" href="#attributes" rel="internal"><li>Attributes</li></a>    
+    
+    </ul>
+    
+    <hr>
+    
+    <ul class="nobull">
+    
+        <a class="nav-link" href="#layouts" rel="internal"><li>Layouts</li></a>    
+    </ul>
+    
+    <hr>
+    
+    <ul class="nobull">
+    
+        <a class="nav-link" href="#example" rel="internal"><li>Example</li></a>    
+    </ul>
+    
+    <hr>
+    
+    <ul class="nobull">
+    
+        <a class="nav-link" href="#sources" rel="internal"><li>Sources</li></a>    
+    </ul>
+    
+</nav>    
+
+<!-- Main Content --> 
+    
+<main id="main-doc">   
+
+<!--Overview-->
+    
+<section class="main-section" id="overview">
+    
+    <header>Overview</header>
+    
+    <p>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web. HTML 5 is the fifth and current major version of the HTML standard, and subsumes XHTML. </p>
+    
+        
+    <p>HTML describes the structure of Web pages using markup. HTML elements, represented by tags, are the building blocks of HTML pages. These tags label pieces of content such as "heading", "paragraph", "table", and so on. Web browsers do not display the HTML tags, but use them to render the content of the page.</p>
+    
+    <p>Although it is not exhaustive, the content below describes some basic components of HTML structure.</p>
+
+</section>
+    
+<!--Elements-->
+    
+<br>
+<hr>        
+    
+<section class="main-section" id="elements">
+    
+<header>Elements</header>
+    
+    <p>An HTML element is an individual component of an HTML document or web page. HTML is composed of a tree of HTML nodes, such as text nodes. Many HTML nodes represent semantics, or meaning. For example, the <code class="codespan">&lt;title&gt;</code> node represents the title of the document.</p>
+    
+     <pre>
+    <code>
+&lt;title&gt;HTML Reference&lt;/title&gt;
+    </code>
+    </pre>
+
+</section>        
+ 
+    
+<!--Tags-->
+
+<br>
+<hr>        
+    
+<section class="main-section" id="tags">
+    
+    <header>Tags</header>
+    
+    <p>HTML tags are element names surrounded by angle brackets:</p>
+    <pre>
+    <code>
+&lt;tagname&gt;Content Goes Here&lt;/tagname&gt;
+    </code>
+    </pre>
+    <div class="movep">
+        <p>HTML tags most commonly come in pairs like <code class="codespan">&lt;h1&gt;</code> and <code class="codespan">&lt;/h1&gt;</code>, although some represent empty elements and so are unpaired, for example <code class="codespan">&lt;img&gt;</code>. The first tag in such a pair is the start tag, and the second is the end tag. They are also called opening tags and closing tags.</p>
+    </div>
+
+</section>
+    
+
+    
+<!--Attributes-->
+
+<br>
+<hr>    
+    
+<section class="main-section" id="attributes">
+    
+<header>Attributes</header>
+    
+    <p>All HTML elements can have <strong>attributes</strong> which provide <strong>additional information</strong> about an element. They are always specified in the <strong>start tag</strong> and usually come in name/value pairs like: <strong>name="value"</strong>.</p> 
+    
+    <p>For example, links are defined with the <code class="codespan">&lt;a&gt;</code> tag. The link address is specified in the href attribute:</p>
+    
+    <pre>
+    <code>
+&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;
+    </code>
+    </pre>
+        
+</section>    
+
+<!--Layouts-->
+
+<br>
+<hr>    
+    
+<section class="main-section" id="layouts">
+    
+<header>Layouts</header>
+    
+    <p>Websites often display content in multiple columns (like a magazine or newspaper). HTML5 offers new semantic elements that define the different parts of a web page:</p>
+    
+        <ul class="lists">
+
+            <li><code class="codespan">&lt;header&gt;</code>&nbsp; Defines a header for a document or a section</li>
+            
+            <li><code class="codespan">&lt;nav&gt;</code>&nbsp;Defines a container for navigation links</li>
+
+            <li><code class="codespan">&lt;section&gt;</code>&nbsp; Defines a section in a document</li>
+            
+            <li><code class="codespan">&lt;article&gt;</code>&nbsp; Defines an independent self-contained article</li>
+    
+            <li><code class="codespan">&lt;aside&gt;</code>&nbsp; Defines content aside from the content (like a sidebar)</li>
+            
+            <li><code class="codespan">&lt;footer&gt;</code>&nbsp; Defines a footer for a document or a section</li>
+            
+            <li><code class="codespan">&lt;details&gt;</code>&nbsp;  Defines additional details</li>        
+           
+            <li><code class="codespan">&lt;summary&gt;</code>&nbsp; Defines a heading for the <code class="codespan">&lt;details&gt;</code> element</li>
+            
+        </ul>
+
+    <p>There are five different ways to create multicolumn layouts. Each way has its pros and cons:</p>
+        
+    <p><strong>HTML Tables</strong></p>
+    <p>The purpose of the <code class="codespan">&lt;table&gt;</code> element is to display tabular data. So, do not use tables for your page layout! They will bring a mess into your code.</p>
+    
+     <p><strong>CSS Frameworks</strong></p>
+    <p>If you want to create your layout fast, you can use a framework, like <a href="https://www.w3schools.com/w3css/default.asp">W3.CSS</a> or <a href="https://www.w3schools.com/bootstrap/default.asp">Bootstrap</a>.</p>
+    
+    <p><strong>CSS Floats</strong></p>
+    <p>It is common to do entire web layouts using the <a href="https://www.w3schools.com/css/css_float.asp">CSS float property</a>. Float is easy to learn - you just need to remember how the float and clear properties work. <strong>Disadvantages:</strong> Floating elements are tied to the document flow, which may harm the flexibility.</p>
+    
+    <p><strong>CSS Flexbox</strong></p>
+    <p><a href="https://www.w3schools.com/css/css3_flexbox.asp">Flexbox</a> is a new layout mode in CSS3. Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices. <strong>Disadvantages:</strong> Does not work in IE10 and earlier.</p>
+    
+    <p><strong>CSS Grid</strong></p>
+    <p>The <a href="https://www.w3schools.com/css/css_rwd_grid.asp">CSS Grid Layout Module</a> offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning. <strong>Disadvantages:</strong> Does not work in IE nor in Edge 15 and earlier.</p>
+
+        
+</section>        
+
+<!--Example-->    
+
+<br>
+<hr>        
+    
+<section class="main-section" id="example">
+    
+    <header>Example</header>
+    
+<br>  
+    
+<pre>
+<code>
+&#x3C;!DOCTYPE html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;
+&#x3C;title&#x3E;Page Title&#x3C;/title&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+&#x3C;h1&#x3E;This is a heading&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;This is a paragraph.&#x3C;/p&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;
+
+</code>
+</pre>
+    
+<br>
+    
+<div><strong>In the example above:</strong>
+
+<ul class="lists">
+    
+    <li>The <code class="codespan">&#x3C;!DOCTYPE html&#x3E;</code> declaration defines this document to be HTML5</li>
+  
+    <li>The <code class="codespan">&#x3C;html&#x3E;</code> element is the root element of an HTML page</li>
+    
+    <li>The <code class="codespan">&#x3C;head&#x3E;</code> element contains meta information about the document</li>
+    
+    <li>The <code class="codespan">&#x3C;title&#x3E;</code> element specifies a title for the document</li>
+    
+    <li>The <code class="codespan">&#x3C;body&#x3E;</code> element contains the visible page content</li>
+    
+    <li>The <code class="codespan">&#x3C;h1&#x3E;</code> element defines a large heading</li>
+    
+    <li>The <code class="codespan">&#x3C;p&#x3E;</code> element defines a paragraph</li>
+
+</ul>
+    
+</div>  
+    
+</section>  
+    
+<!--Layouts-->
+
+<br>
+<hr>    
+    
+<section class="main-section" id="sources">
+    
+<header>Sources</header>
+    
+    <p>The content for this page was sampled from HTML articles on <a href="https://www.w3schools.com/html/default.asp">W3Schools.com</a> and <a href="https://en.wikipedia.org/wiki/HTML">Wikipedia</a>.</p>
+
+</section>    
+    
+</main>
+</body>    
+</html>
